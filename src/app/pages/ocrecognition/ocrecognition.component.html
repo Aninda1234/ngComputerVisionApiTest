@@ -1,0 +1,26 @@
+<div>
+    <h2>Computer Vision feature - Object Recognition</h2>
+    <h4>Upload Image for </h4>
+    <input type="file" (change)="onFileChange($event)" placeholder="Upload Image for Object Recognition" />
+    <img *ngIf="imageUrl" [src]="imageUrl" alt="Uploaded Image" />
+
+    
+    <h2>OCR Results</h2>
+    <div *ngIf="oCRResults">
+        <h3>Detected Optical Characters Name(s):</h3>
+        <ul>
+          <li *ngFor="let opticalCharacter of oCRResults.result.objects">
+            {{ opticalCharacter }}
+          </li>
+        </ul>
+
+        <h3>All Detected Optical Characters:</h3>
+        <ul>
+            <li *ngFor="let block of oCRResults.result.blocks">
+            {{ block.object }} - Confidence: {{ block.confidence }}
+            </li>
+        </ul>  
+    </div>
+
+  </div>
+  

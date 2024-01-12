@@ -1,0 +1,62 @@
+<!-- <div>
+    <h2>Computer Vision feature - Object Recognition</h2>
+    <h4>Upload Image for </h4>
+    <input type="file" (change)="onFileChange($event)" placeholder="Upload Image for Object Recognition" />
+    <img *ngIf="imageUrl" [src]="imageUrl" alt="Uploaded Image" />
+
+    
+    <h2>Object Recognition Results</h2>
+    <div *ngIf="objectRecognitionResults">
+        <h3>Detected Objects Names:</h3>
+        <ul>
+          <li *ngFor="let object of objectRecognitionResults.result.objects">
+            {{ object }}
+          </li>
+        </ul>
+
+        <h3>All Detected Objects:</h3>
+        <ul>
+            <li *ngFor="let block of objectRecognitionResults.result.blocks">
+            {{ block.object }} - Confidence: {{ block.confidence }}
+            </li>
+        </ul>  
+    </div>
+
+    <h2>Logo Recognition Results</h2>
+    <div *ngIf="logoRecognitionResults">
+        <h3>Detected logo Name(s):</h3>
+        <ul>
+          <li *ngFor="let logo of logoRecognitionResults.result.objects">
+            {{ logo }}
+          </li>
+        </ul>
+
+        <h3>All Detected Objects:</h3>
+        <ul>
+            <li *ngFor="let block of logoRecognitionResults.result.blocks">
+            {{ block.object }} - Confidence: {{ block.confidence }}
+            </li>
+        </ul>  
+    </div>
+
+    <h2>OCR Results</h2>
+    <div *ngIf="logoRecognitionResults">
+        <h3>Detected Optical Characters Name(s):</h3>
+        <ul>
+          <li *ngFor="let opticalCharacter of oCRResults.result.objects">
+            {{ opticalCharacter }}
+          </li>
+        </ul>
+
+        <h3>All Detected Optical Characters:</h3>
+        <ul>
+            <li *ngFor="let block of oCRResults.result.blocks">
+            {{ block.object }} - Confidence: {{ block.confidence }}
+            </li>
+        </ul>  
+    </div>
+
+  </div>
+   -->
+
+<p>Try any of the above Computer Vision functions </p>
